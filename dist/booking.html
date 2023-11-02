@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПАРУС - база отдыха</title>
+    <title>ПАРУС - Гостевые домики</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/blocks.css">
 </head>
 <body>
-    <div class="page">
-        <header class="header">
+<div class="page">
+    <header class="header">
     <div class="header__wrapper">
         <a href="/index.html"
            class="header__logo">
@@ -65,166 +65,80 @@
     </div>
 </header>
 
-        <main class="main-slider">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="main-slide main-slider__slide">
-                    <div class="main-slide__img-container">
-                        <img src="/images/main-slider/main-slider-img-comfort.jpg"
-                             alt=""
-                             class="main-slide__img">
-                    </div>
+    <nav class="breadcrumbs page__breadcrumbs"
+     style="--breadcrumbs-separator: '/'">
+  <!-- todo --breadcrumbs-separator - для изменения разделителя между хлебными крошками-->
+  <!-- todo по дефолту уже стоит нужный разделитель -->
+  <!-- todo Илья удали аттрибут style когда будешь интегрировать, по дефолту уже все стоит как в макете! -->
 
-                    <div class="wrapper main-slide__wrapper">
-                        <div class="main-slide__info">
-                            <h1 class="main-slide__title">Комфорт в гармонии с природой!</h1>
+  <div class="wrapper breadcrumbs__wrapper">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a href="#"
+           class="breadcrumbs__link">Главная</a>
+      </li>
 
-                            <div class="main-slide__text">База отдыха «Парус»</div>
+      <li class="breadcrumbs__item"><span class="breadcrumbs__text">Бронирование</span></li>
+    </ul>
+  </div>
+</nav>
 
-                            <a href="#"
-                               class="btn main-slide__btn">
-                                <span class="btn__text">Подробнее</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="page-title page__title">
+  <div class="wrapper page-title__wrapper">
+    <h1 class="title service-info__title">Бронирование</h1>
+  </div>
+</section>
 
-            <div class="swiper-slide">
-                <div class="main-slide main-slider__slide">
-                    <div class="main-slide__img-container">
-                        <img src="/images/main-slider/main-slider-img-bathhouse.jpg"
-                             alt=""
-                             class="main-slide__img">
-                    </div>
-
-                    <div class="wrapper main-slide__wrapper">
-                        <div class="main-slide__info">
-                            <h1 class="main-slide__title">Жаркая русская баня на дровах</h1>
-
-                            <div class="main-slide__text">для 4-х человек</div>
-
-                            <a href="#"
-                               class="btn main-slide__btn">
-                                <span class="btn__text">Подробнее</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="main-slide main-slider__slide">
-                    <div class="main-slide__img-container">
-                        <img src="/images/main-slider/main-slider-img-npr.jpg"
-                             alt=""
-                             class="main-slide__img">
-                    </div>
-
-                    <div class="wrapper main-slide__wrapper">
-                        <div class="main-slide__info">
-                            <h1 class="main-slide__title">Работаем, чтобы вы отдыхали</h1>
-
-                            <div class="main-slide__text">
-                                при поддержке национального проекта «туризм и индустрия гостеприимства»
-                            </div>
-
-                            <a href="#"
-                               class="btn main-slide__btn">
-                                <span class="btn__text">Подробнее</span>
-                            </a>
-                        </div>
-
-                        <svg class="main-slide__npr">
-                            <use xlink:href="images/svg/sprite.symbol.svg#logo_npr"></use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="main-slider__bottom-panel">
-        <div class="main-slider__buttons">
-            <button type="button" class="slider-btn main-slider__slider-btn main-slider__slider-btn_prev"></button>
-            <button type="button" class="slider-btn main-slider__slider-btn main-slider__slider-btn_next"></button>
-        </div>
-
-        <div class="main-slider__pagination"></div>
-    </div>
-</main>
-
-        <section class="page__filter-container">
+    <div class="filter filter_booking page__filter">
     <div class="wrapper">
         <form action=""
-              method="GET"
-              class="filter page__filter">
+              class="filter__form">
 
             <div class="filter__row">
-                <div class="calendar filter__date">
-                    <div class="calendar__form-group date">
-                        <label class="calendar__label">Заезд</label>
+                <div class="form-group filter__form-group">
+                    <div class="form-group__label">Питание</div>
 
-                        <div class="calendar__input-container">
-                            <input type="text"
-                                   name="date_start"
-                                   class="calendar__input calendar__input_left form-control date-input js-data-start"
-                                   placeholder="28.10.2023"
-                                   readonly>
+                    <div class="select form-group__select">
+                        <div class="select__value">без питания</div>
 
-                            <svg class="calendar__icon">
-                                <use xlink:href="images/svg/sprite.symbol.svg#calendar"></use>
-                            </svg>
+                        <div class="select__dropdown">
+                            <ul class="select__list">
+                                <li class="select__item select__item_is-active" data-value="без питания">без питания</li>
+                                <li class="select__item" data-value="питание">питание</li>
+                            </ul>
                         </div>
 
-                        <div class="calendar__date">
-                            <div class="gesh-date">
-                                <div class="gesh-date-cal"></div>
-                                <div class="control">
-                                    <div class="control__inputs">
-                                        <div class="control__checkbox">
-                                            <input type="checkbox" name="ch" id="ch1">
-                                            <label for="ch1">Раннее прибытие</label>
-                                        </div>
-
-                                        <div class="control__checkbox">
-                                            <input type="checkbox" name="ch" id="ch2">
-                                            <label for="ch2">Поздний отъезд</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="colors popular">Выходные дни</div>
-
-                                    <button type="button" class="control__close"></button>
-                                </div>
-                            </div>
-                        </div>
+                        <select name="" class="select__hidden-select">
+                            <option value="без питания">без питания</option>
+                            <option value="питание">питание</option>
+                        </select>
                     </div>
+                </div>
 
-                    <div class="calendar__form-group date">
-                        <label class="calendar__label">Выезд</label>
+                <div class="form-group filter__form-group">
+                    <div class="form-group__label">Категория номера</div>
 
-                        <div class="calendar__input-container">
-                            <input type="text"
-                                   name="date_end"
-                                   class="calendar__input calendar__input_right form-control date-input js-data-end"
-                                   placeholder="28.10.2023"
-                                   readonly>
+                    <div class="select form-group__select">
+                        <div class="select__value">Гостевой домик</div>
 
-                            <svg class="calendar__icon">
-                                <use xlink:href="images/svg/sprite.symbol.svg#calendar"></use>
-                            </svg>
+                        <div class="select__dropdown">
+                            <ul class="select__list">
+                                <li class="select__item select__item_is-active" data-value="Гостевой домик">Гостевой домик</li>
+                                <li class="select__item" data-value="Домик">Домик</li>
+                            </ul>
                         </div>
+
+                        <select name="" class="select__hidden-select">
+                            <option value="Гостевой домик">Гостевой домик</option>
+                            <option value="Домик">Домик</option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="form-group filter__form-group filter__form-group_adults">
                     <div class="form-group__label">Взрослые</div>
 
-                    <!-- todo --select-max-list-item - видимое кол-во option-ов -->
-                    <div class="select form-group__select"
-                         style="--select-max-list-item: 4">
+                    <div class="select form-group__select">
                         <div class="select__value">1</div>
 
                         <div class="select__dropdown">
@@ -240,7 +154,7 @@
                             </ul>
                         </div>
 
-                        <select name="adults" class="select__hidden-select">
+                        <select name="" class="select__hidden-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -256,9 +170,7 @@
                 <div class="form-group filter__form-group filter__form-group_kids">
                     <div class="form-group__label">Дети</div>
 
-                    <!-- todo --select-max-list-item - видимое кол-во option-ов -->
-                    <div class="select form-group__select"
-                         style="--select-max-list-item: 5">
+                    <div class="select form-group__select">
                         <div class="select__value">0</div>
 
                         <div class="select__dropdown">
@@ -275,7 +187,7 @@
                             </ul>
                         </div>
 
-                        <select name="kids" class="select__hidden-select">
+                        <select name="" class="select__hidden-select">
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -289,173 +201,61 @@
                     </div>
                 </div>
 
-                <button class="btn filter__btn" type="submit"><span class="btn__text">Найти</span></button>
+                <div class="calendar filter__date">
+                    <div class="calendar__form-group date">
+                        <label class="calendar__label">Заезд</label>
+
+                        <div class="calendar__input-container">
+                            <input type="text"
+                                   name=""
+                                   class="calendar__input calendar__input_left form-control date-input js-data-start"
+                                   placeholder="28.10.2023"
+                                   readonly>
+
+                            <svg class="calendar__icon">
+                                <use xlink:href="images/svg/sprite.symbol.svg#calendar"></use>
+                            </svg>
+                        </div>
+
+                        <div class="calendar__date">
+                            <div class="gesh-date">
+                                <div class="gesh-date-cal"></div>
+                                <div class="control">
+                                    <input type="checkbox" name="ch" id="ch1">
+                                    <label for="ch1">Раннее прибытие</label>
+                                    <input type="checkbox" name="ch" id="ch2">
+                                    <label for="ch2">Поздний отъезд</label>
+
+                                    <div class="colors popular">Выходные дни</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar__form-group date">
+                        <label class="calendar__label">Выезд</label>
+
+                        <div class="calendar__input-container">
+                            <input type="text"
+                                   name=""
+                                   class="calendar__input calendar__input_right form-control date-input js-data-end"
+                                   placeholder="28.10.2023"
+                                   readonly>
+
+                            <svg class="calendar__icon">
+                                <use xlink:href="images/svg/sprite.symbol.svg#calendar"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn filter__btn"><span class="btn__text">Найти</span></button>
             </div>
         </form>
     </div>
-</section>
+</div>
 
-        <section class="collage page__collage">
-    <div class="wrapper">
-        <h2 class="title collage__title">Проживание с комфортом в гостевых домиках</h2>
-
-        <div class="collage__grid">
-            <picture class="collage__picture collage__picture_main">
-                <img src="/images/collage/collage-img-1.jpg"
-                     alt=""
-                     class="collage__main-img">
-            </picture>
-
-            <picture class="collage__picture collage__picture_top">
-                <img src="/images/collage/collage-img-2.jpg"
-                     alt=""
-                     class="collage__img">
-            </picture>
-
-            <picture class="collage__picture collage__picture_bottom">
-                <img src="/images/collage/collage-img-1.jpg"
-                     alt=""
-                     class="collage__img">
-            </picture>
-        </div>
-    </div>
-</section>
-
-        <section class="mobile-slider page__mobile-slider">
-  <div class="wrapper mobile-slider__wrapper">
-    <h2 class="title mobile-slider__title">Красоты побережья Беловского водохранилища</h2>
-
-    <div class="mobile-slider__slider-container">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="/images/mobile-slider/mobile-slider-img-1.jpg"
-                 alt=""
-                 class="mobile-slider__img">
-          </div>
-
-          <div class="swiper-slide">
-            <img src="/images/mobile-slider/mobile-slider-img-2.jpg"
-                 alt=""
-                 class="mobile-slider__img">
-          </div>
-
-          <div class="swiper-slide">
-            <img src="/images/mobile-slider/mobile-slider-img-3.jpg"
-                 alt=""
-                 class="mobile-slider__img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section class="infographic page__infographic">
-    <div class="wrapper infographic__wrapper">
-        <div class="infographic__table">
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-cottages.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Комфортные домики</div>
-                </div>
-            </div>
-
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-shore.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Рядом с берегом</div>
-                </div>
-            </div>
-
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-holiday.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Отдых на природе</div>
-                </div>
-            </div>
-
-
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-gazebos.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Беседки</div>
-                </div>
-            </div>
-
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-restaurant.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Ресторан</div>
-                </div>
-            </div>
-
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-bathhouse.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Баня</div>
-                </div>
-            </div>
-
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-payment.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Разные способы оплаты</div>
-                </div>
-            </div>
-
-            <div class="infographic__table-item">
-                <div class="infographic__item">
-                    <img src="/images/svg/infographic-online.svg"
-                         alt=""
-                         class="infographic__img">
-
-                    <div class="infographic__name">Бронирование on-line</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="infographic__pagination"></div>
-    </div>
-</section>
-
-        <section class="map page__map">
-    <div class="map__wrapper">
-        <h2 class="title map__title">Отдых в самом центре Кузбасса</h2>
-    </div>
-
-    <div style="position:relative;overflow:hidden;"><a
-            href="https://yandex.ru/maps/org/parus/36323079390/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Парус</a><a
-            href="https://yandex.ru/maps/11282/kemerovo-oblast/category/tourist_camp/184106426/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Турбаза в Кемеровской области (Кузбассе)</a>
-        <iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=86.430869%2C54.394887&mode=search&oid=36323079390&ol=biz&sctx=ZAAAAAgBEAAaKAoSCZ5A2ClWjFVAEQJhp1g1WEtAEhIJxNFVurvOtj8ROIO%2FX8yWnD8iBgABAgMEBSgKOABAnI4GSAFqAnJ1nQHNzEw9oAEAqAEAvQFDQEg7wgEVk%2FiZgwTs3eyVBJa855q%2FAdaUm%2B0G6gEA8gEA%2BAEAggIK0L%2FQsNGA0YPRgYoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=86.430869%2C54.394887&source=mapframe&sspn=0.582950%2C0.184011&text=%D0%BF%D0%B0%D1%80%D1%83%D1%81&utm_source=mapframe&z=14&scroll=false"
-                width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-    </div>
-</section>
-
-        <footer class="footer page__footer">
+    <footer class="footer page__footer">
     <div class="footer__main">
         <div class="footer__wrapper footer__wrapper_main">
             <div class="footer__logo">
@@ -548,7 +348,7 @@
         </div>
     </div>
 </footer>
-    </div>
-    <script src="js/build.min.js"></script>
+</div>
+<script src="js/build.min.js"></script>
 </body>
 </html>
