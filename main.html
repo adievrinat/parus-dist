@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПАРУС - база отдыха</title>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/blocks.css">
+  <meta charset="UTF-8">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПАРУС</title>
+  <!-- todo Предзагрузка шрифтов обязательна -->
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Light.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Medium.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
+
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/blocks.css">
 </head>
 <body>
     <div class="page">
@@ -73,7 +79,8 @@
                     <div class="main-slide__img-container">
                         <img src="images/main-slider/main-slider-img-comfort.jpg"
                              alt=""
-                             class="main-slide__img">
+                             class="main-slide__img"
+                             fetchpriority="high">
                     </div>
 
                     <div class="wrapper main-slide__wrapper">
@@ -96,7 +103,10 @@
                     <div class="main-slide__img-container">
                         <img src="images/main-slider/main-slider-img-bathhouse.jpg"
                              alt=""
-                             class="main-slide__img">
+                             class="main-slide__img"
+                             fetchpriority="low"
+                             loading="lazy"
+                             decoding="async">
                     </div>
 
                     <div class="wrapper main-slide__wrapper">
@@ -119,7 +129,10 @@
                     <div class="main-slide__img-container">
                         <img src="images/main-slider/main-slider-img-npr.jpg"
                              alt=""
-                             class="main-slide__img">
+                             class="main-slide__img"
+                             fetchpriority="low"
+                             loading="lazy"
+                             decoding="async">
                     </div>
 
                     <div class="wrapper main-slide__wrapper">
@@ -303,19 +316,22 @@
             <picture class="collage__picture collage__picture_main">
                 <img src="images/collage/collage-img-1.jpg"
                      alt=""
-                     class="collage__main-img">
+                     class="collage__main-img"
+                     loading="lazy">
             </picture>
 
             <picture class="collage__picture collage__picture_top">
                 <img src="images/collage/collage-img-2.jpg"
                      alt=""
-                     class="collage__img">
+                     class="collage__img"
+                     loading="lazy">
             </picture>
 
             <picture class="collage__picture collage__picture_bottom">
                 <img src="images/collage/collage-img-1.jpg"
                      alt=""
-                     class="collage__img">
+                     class="collage__img"
+                     loading="lazy">
             </picture>
         </div>
     </div>
@@ -331,19 +347,22 @@
           <div class="swiper-slide">
             <img src="images/mobile-slider/mobile-slider-img-1.jpg"
                  alt=""
-                 class="mobile-slider__img">
+                 class="mobile-slider__img"
+                 loading="lazy">
           </div>
 
           <div class="swiper-slide">
             <img src="images/mobile-slider/mobile-slider-img-2.jpg"
                  alt=""
-                 class="mobile-slider__img">
+                 class="mobile-slider__img"
+                 loading="lazy">
           </div>
 
           <div class="swiper-slide">
             <img src="images/mobile-slider/mobile-slider-img-3.jpg"
                  alt=""
-                 class="mobile-slider__img">
+                 class="mobile-slider__img"
+                 loading="lazy">
           </div>
         </div>
       </div>
@@ -358,7 +377,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-cottages.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Комфортные домики</div>
                 </div>
@@ -368,7 +388,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-shore.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Рядом с берегом</div>
                 </div>
@@ -378,7 +399,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-holiday.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Отдых на природе</div>
                 </div>
@@ -389,7 +411,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-gazebos.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Беседки</div>
                 </div>
@@ -399,7 +422,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-restaurant.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Ресторан</div>
                 </div>
@@ -409,7 +433,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-bathhouse.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Баня</div>
                 </div>
@@ -419,7 +444,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-payment.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Разные способы оплаты</div>
                 </div>
@@ -429,7 +455,8 @@
                 <div class="infographic__item">
                     <img src="images/svg/infographic-online.svg"
                          alt=""
-                         class="infographic__img">
+                         class="infographic__img"
+                         loading="lazy">
 
                     <div class="infographic__name">Бронирование on-line</div>
                 </div>

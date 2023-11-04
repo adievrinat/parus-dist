@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПАРУС - Гостевые домики</title>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/blocks.css">
+  <meta charset="UTF-8">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПАРУС</title>
+  <!-- todo Предзагрузка шрифтов обязательна -->
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Light.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Medium.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
+
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/blocks.css">
 </head>
 <body>
 <div class="page">
@@ -89,10 +95,10 @@
   </div>
 </section>
 
-    <div class="filter filter_booking page__filter">
+    <section class="page__filter-container">
     <div class="wrapper">
         <form action=""
-              class="filter__form">
+              class="filter">
 
             <div class="filter__row">
                 <div class="form-group filter__form-group">
@@ -253,7 +259,191 @@
             </div>
         </form>
     </div>
-</div>
+</section>
+
+    <div class="wrapper page__grid">
+        <section class="services page__services">
+    <div class="services__item">
+        <div class="service">
+            <div class="service__slider">
+                <div class="gallery-slider gallery-slider_booking">
+                    <div class="service-slider service-slider_booking">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/service-slider/service-slider-img-1.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="high">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-1.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="low"
+                                         loading="lazy"
+                                         decoding="async">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-2.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="low"
+                                         loading="lazy"
+                                         decoding="async">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-3.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="low"
+                                         loading="lazy"
+                                         decoding="async">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/service-slider/service-slider-img-1.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="low"
+                                         loading="lazy"
+                                         decoding="async">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-1.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="low"
+                                         loading="lazy"
+                                         decoding="async">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-2.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="low"
+                                         loading="lazy"
+                                         decoding="async">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-3.jpg"
+                                         alt=""
+                                         class="service-slider__img"
+                                         fetchpriority="low"
+                                         loading="lazy"
+                                         decoding="async">
+                                </div>
+                            </div>
+
+                            <button type="button" class="slider-btn service-slider__slider-btn service-slider__slider-btn_prev"></button>
+                            <button type="button" class="slider-btn service-slider__slider-btn service-slider__slider-btn_next"></button>
+                        </div>
+                    </div>
+                    <div class="service-gallery service-gallery_booking gallery-slider__gallery">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/service-slider/service-slider-img-1.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-1.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-2.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-3.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/service-slider/service-slider-img-1.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-1.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-2.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="images/collage/collage-img-3.jpg"
+                                         alt=""
+                                         class="service-gallery__img"
+                                         loading="lazy">
+                                </div>
+                            </div>
+
+                            <button type="button" class="slider-btn service-gallery__slider-btn service-gallery__slider-btn_prev"></button>
+                            <button type="button" class="slider-btn service-gallery__slider-btn service-gallery__slider-btn_next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service__info">
+                <h2 class="service__title">Гостевой домик</h2>
+
+                <div class="service__text-container">
+                    <p><b>В номере:</b> одна двуспальная кровать, одна односпальная кровать, раскладной одноместный диван,
+                        шкаф для верхней одежды, шкаф для вещей, тумбочки, два столика, телевизор.</p>
+
+                    <p>
+                        <b>Кухня:</b> чайник, микроволновая печь, варочная панель, раковина, шкафчики, набор посуды и
+                        столовых пренадлежностей.
+                    </p>
+
+                    <p><b>Санузел:</b> душевая кабина, раковина, зеркало, фен, унитаз.</p>
+
+                    <p><b>Площадь:</b> 28 кв.м.</p>
+
+                    <a href="#">Дополнительно</a>
+                </div>
+            </div>
+
+            <div class="service__footer">
+                <div class="booking booking_with-price">
+                    <div class="booking__text">Цена за 1 ночь: <div class="booking__price">4 000 ₽</div></div>
+
+                    <a href="#"
+                       class="btn booking__btn"><span class="btn__text">Забронировать</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
 
     <footer class="footer page__footer">
     <div class="footer__main">

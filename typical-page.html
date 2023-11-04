@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ПАРУС - Типовая страница</title>
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/blocks.css">
+  <meta charset="UTF-8">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПАРУС</title>
+  <!-- todo Предзагрузка шрифтов обязательна -->
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Light.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Medium.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
+
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/blocks.css">
 </head>
 <body>
 <div class="page">
@@ -114,7 +120,8 @@
                 <div class="text-with-image__image-container">
                     <img src="images/mobile-slider/mobile-slider-img-1.jpg"
                          alt=""
-                         class="text-with-image__img">
+                         class="text-with-image__img"
+                         loading="lazy">
                 </div>
 
                 <div class="text text-with-image__text">But I must explain to you how all this mistaken idea of denouncing
@@ -151,49 +158,35 @@
                             <div class="swiper-slide">
                                 <img src="images/service-slider/service-slider-img-1.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="high">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-1.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-2.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-3.jpg"
                                      alt=""
-                                     class="service-slider__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/service-slider/service-slider-img-1.jpg"
-                                     alt=""
-                                     class="service-slider__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/collage/collage-img-1.jpg"
-                                     alt=""
-                                     class="service-slider__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/collage/collage-img-2.jpg"
-                                     alt=""
-                                     class="service-slider__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/collage/collage-img-3.jpg"
-                                     alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
                         </div>
 
@@ -207,49 +200,29 @@
                             <div class="swiper-slide">
                                 <img src="images/service-slider/service-slider-img-1.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-1.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-2.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-3.jpg"
                                      alt=""
-                                     class="service-gallery__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/service-slider/service-slider-img-1.jpg"
-                                     alt=""
-                                     class="service-gallery__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/collage/collage-img-1.jpg"
-                                     alt=""
-                                     class="service-gallery__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/collage/collage-img-2.jpg"
-                                     alt=""
-                                     class="service-gallery__img">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="images/collage/collage-img-3.jpg"
-                                     alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
                         </div>
 
@@ -270,6 +243,12 @@
                 ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any
                 right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
                 who avoids a pain that produces no resultant pleasure?
+            </section>
+
+            <section class="more page__more">
+                <a href="#" class="btn more__btn"><span class="btn__text">Подробнее</span></a>
+
+                <a href="#" class="more__link">https://vk.com/public205293129</a>
             </section>
         </div>
     </section>

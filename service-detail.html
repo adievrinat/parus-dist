@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ПАРУС - Гостевые домики</title>
+  <title>ПАРУС</title>
+  <!-- todo Предзагрузка шрифтов обязательна -->
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Light.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Medium.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-Regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" fetchpriority="high" href="fonts/Geologica-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
+
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/blocks.css">
 </head>
@@ -98,49 +104,71 @@
                             <div class="swiper-slide">
                                 <img src="images/service-slider/service-slider-img-1.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="high">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-1.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-2.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-3.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/service-slider/service-slider-img-1.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-1.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-2.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-3.jpg"
                                      alt=""
-                                     class="service-slider__img">
+                                     class="service-slider__img"
+                                     fetchpriority="low"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
                         </div>
 
@@ -154,49 +182,57 @@
                             <div class="swiper-slide">
                                 <img src="images/service-slider/service-slider-img-1.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-1.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-2.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-3.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/service-slider/service-slider-img-1.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-1.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-2.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
 
                             <div class="swiper-slide">
                                 <img src="images/collage/collage-img-3.jpg"
                                      alt=""
-                                     class="service-gallery__img">
+                                     class="service-gallery__img"
+                                     loading="lazy">
                             </div>
                         </div>
 
