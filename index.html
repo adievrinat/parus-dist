@@ -10,23 +10,24 @@
   <link rel="preload" fetchpriority="high" href="fonts/Geologica-Regular.woff2" type="font/woff2" as="font" crossorigin>
   <link rel="preload" fetchpriority="high" href="fonts/Geologica-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
 
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/blocks.css">
+  <!-- todo Предзагрузка стилей желательна -->
+  <link rel="preload" href="css/layout.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/blocks.css" as="style" onload="this.rel='stylesheet'">
 </head>
 <body>
     <div style="margin: 0 auto; padding-top: 60px; max-width: 1448px;">
         <ul>
             <li>
-                <a href="main.html">Главная</a>
+                <a href="/main.html">Главная</a>
             </li>
             <li>
-                <a href="service-detail.html">Детальная услуги (Гостевые домики)</a>
+                <a href="/service-detail.html">Детальная услуги (Гостевые домики)</a>
             </li>
             <li>
-                <a href="typical-page.html">Типовая страница</a>
+                <a href="/typical-page.html">Типовая страница</a>
             </li>
             <li>
-                <a href="booking.html">Бронирование</a>
+                <a href="/booking.html">Бронирование</a>
             </li>
         </ul>
     </div>
