@@ -11,8 +11,8 @@
   <link rel="preload" fetchpriority="high" href="fonts/Geologica-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
 
   <!-- todo Предзагрузка стилей желательна -->
-  <link rel="preload" href="css/layout.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="css/blocks.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="layout.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="blocks.css" as="style" onload="this.rel='stylesheet'">
 </head>
 <body>
     <div class="page">
@@ -335,6 +335,9 @@
                      loading="lazy">
             </picture>
         </div>
+
+        <div class="collage__parallax collage__parallax_left"></div>
+        <div class="collage__parallax collage__parallax_right"></div>
     </div>
 </section>
 
@@ -492,7 +495,7 @@
 
             <div class="footer__info">
                 <div class="footer__text">© 2023 База отдыха «Парус»</div>
-                <div class="footer__text">Политика конфиденциальности</div>
+                <a href="#" class="footer__text">Политика конфиденциальности</a>
                 <div class="footer__text">Кузбасс, Беловский р-он, с. Поморцево База отдыха «Парус» </div>
             </div>
 
